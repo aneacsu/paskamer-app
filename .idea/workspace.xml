@@ -63,85 +63,7 @@
     <favorites_list name="paskamer-app" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/index.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="36" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1785">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="screen-hdpi-landscape.png" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/res/screen/android/screen-hdpi-landscape.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1740" selection-end="1740" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="logo.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/img/logo.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lock-icon.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/img/lock-icon.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="rmargin.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/lib/ext/jquery/src/css/var/rmargin.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="global.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/css/global.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9780">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/spec/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1050">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="690">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -152,6 +74,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/www/js/main.js" />
+        <option value="$PROJECT_DIR$/www/css/global.css" />
       </list>
     </option>
   </component>
@@ -218,38 +141,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="spec" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paskamer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="paskamer-app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -552,12 +443,12 @@
       <created>1403556624263</created>
       <updated>1403556624263</updated>
       <workItem from="1403556628441" duration="1145000" />
-      <workItem from="1403988069846" duration="1150000" />
+      <workItem from="1403988069846" duration="1326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2295000" />
+    <option name="totallyTimeSpent" value="2471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="22" width="1626" height="1028" extended-state="0" />
@@ -631,20 +522,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/ext/jquery/src/css/var/rmargin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/res/icon/android/icon-48-mdpi.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -663,13 +540,6 @@
     <entry file="file://$PROJECT_DIR$/www/img/lock-icon.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/lib/ext/jquery/src/css/var/rmargin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="910">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/spec/index.js">
@@ -695,11 +565,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/global.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9780">
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/www/res/screen/android/screen-hdpi-landscape.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/css/index.css">
@@ -707,11 +575,6 @@
         <state line="75" column="36" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1785">
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/res/screen/android/screen-hdpi-landscape.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
       </provider>
     </entry>
   </component>
