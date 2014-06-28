@@ -1,113 +1,179 @@
-/*
- * Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- * http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
-{
-    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+@charset "UTF-8";
+/* line 2, ../scss/_paskamer.scss */
+.mp-logo {
+    margin: 9px 20px 9px 9px;
+    vertical-align: bottom;
 }
 
-body {
-    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
-    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
-    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
-    background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
+/* line 1, ../scss/_modules/_header.scss */
+.header {
+    background-color: #ad1d28;
 }
 
-/* Portrait layout (default) */
-.app {
-    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
-    position:absolute;             /* position in the center of the screen */
-    left:50%;
-    top:50%;
-    height:50px;                   /* text area height */
-    width:225px;                   /* text area width */
-    text-align:center;
-    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
-    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
-                                   /* offset horizontal: half of text area width */
+/* line 5, ../scss/_modules/_header.scss */
+.header > .lead {
+    line-height: 39px;
 }
 
-/* Landscape layout (with min-width) */
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
-        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
-                                      /* offset horizontal: half of image width and text area width */
-    }
+/* line 1, ../scss/_modules/_mannequin.scss */
+.mannequin {
+    text-align: center;
+    position: relative;
 }
 
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+/* line 6, ../scss/_modules/_mannequin.scss */
+.outline {
+    width: 300px;
+    opacity: 0.25;
 }
 
-.event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+/* line 1, ../scss/_modules/_slot.scss */
+.slot-container {
+    margin-top: 4px;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+/* line 5, ../scss/_modules/_slot.scss */
+.slot {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    background-color: -webkit-radial-gradient(circle, #12a5b0, #0f8790);
+    text-align: center;
+    display: inline-block;
+    border: 2px solid #12a5b0;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+/* line 30, ../scss/_modules/_slot.scss */
+.slot-image {
+    max-width: 189px;
+    max-height: 189px;
+    margin: 0 auto;
 }
 
-@keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+/* line 36, ../scss/_modules/_slot.scss */
+.slot-menu-container {
+    display: inline-block;
+    margin-left: 10px;
 }
- 
-@-webkit-keyframes fade {
-    from { opacity: 1.0; }
-    50% { opacity: 0.4; }
-    to { opacity: 1.0; }
+
+/* line 1, ../scss/_modules/_other.scss */
+#paskamer-logo {
+    line-height: 33px;
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+/* line 5, ../scss/_modules/_other.scss */
+#content-container {
+    width: 424px;
+    position: relative;
+    z-index: 1;
+}
+
+/* line 11, ../scss/_modules/_other.scss */
+#bottom-buttons-container {
+    margin: 10px 0;
+}
+
+/* line 15, ../scss/_modules/_other.scss */
+#capi-random-button {
+    width: 175px;
+}
+
+/* line 20, ../scss/_modules/_other.scss */
+#create-button {
+    width: 175px;
+    margin-left: 0;
+}
+
+/* line 25, ../scss/_modules/_other.scss */
+#bg-image {
+    background-image: url(/images/woman.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 0.55;
+}
+
+/* line 1, ../scss/_modules/_select-menu.scss */
+.select-menu-type {
+    display: block;
+    width: 80px;
+}
+
+/* line 6, ../scss/_modules/_select-menu.scss */
+.select-menu-size {
+    display: block;
+    width: 80px;
+}
+
+/* line 11, ../scss/_modules/_select-menu.scss */
+.select-menu-color {
+    display: block;
+    width: 80px;
+}
+
+/* line 5, ../scss/_modules/_checkbox.scss */
+.checkbox-lock-top {
+    top: 58px;
+}
+
+/* line 9, ../scss/_modules/_checkbox.scss */
+.checkbox-lock-center {
+    top: 281px;
+}
+
+/* line 13, ../scss/_modules/_checkbox.scss */
+.checkbox-lock-bottom {
+    top: 548px;
+}
+
+/* line 1, ../scss/_modules/_mpbutton.scss */
+.button.medium, .button.small {
+    padding: 0 1em;
+}
+
+/* line 5, ../scss/_modules/_mpbutton.scss */
+.button.medium {
+    font-size: .813em;
+    line-height: 2.154em;
+}
+
+/* line 10, ../scss/_modules/_mpbutton.scss */
+.button.primary {
+    font-size: .938em;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #21479c;
+    background: #5198ea;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zd…B5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2c4MjkpIiAvPgo8L3N2Zz4=);
+    background: -moz-linear-gradient(top, #5198ea 0, #21479c 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#5198ea), to(#21479c));
+    background: -webkit-linear-gradient(top, #5198ea 0, #21479c 100%);
+    background: -o-linear-gradient(top, #5198ea 0, #21479c 100%);
+    background: -ms-linear-gradient(top, #5198ea 0, #21479c 100%);
+    background: linear-gradient(to bottom, #5198ea 0%, #21479c 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#5198ea',endColorstr='#21479c',GradientType=0);
+    -webkit-box-shadow: #7db3f0 0 1px 0 inset;
+    -moz-box-shadow: #7db3f0 0 1px 0 inset;
+    box-shadow: #7db3f0 0 1px 0 inset;
+}
+
+/* line 29, ../scss/_modules/_mpbutton.scss */
+.button, input.button {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    zoom: 1;
+    zoom: 1;
+    vertical-align: middle;
+    text-align: center;
+    outline: 0;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+    margin: 0;
+    -webkit-appearance: none;
+    border-radius: 0;
+    font-family: Arial,sans-serif;
 }

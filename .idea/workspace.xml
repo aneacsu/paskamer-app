@@ -64,19 +64,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="36" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1785">
-              <folding />
+            <state line="179" column="0" selection-start="4124" selection-end="4124" vertical-scroll-proportion="0.9810056" vertical-offset="1807" max-vertical-offset="2775">
+              <folding>
+                <element signature="e#2852#3007#2" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="35" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.5338691" vertical-offset="0" max-vertical-offset="1860">
+            <state line="31" column="35" selection-start="1473" selection-end="1473" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="1860">
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -144,6 +146,7 @@
         <option value="$PROJECT_DIR$/www/js/main.js" />
         <option value="$PROJECT_DIR$/www/css/global.css" />
         <option value="$PROJECT_DIR$/www/index.html" />
+        <option value="$PROJECT_DIR$/www/css/index.css" />
       </list>
     </option>
   </component>
@@ -531,12 +534,12 @@
       <created>1403556624263</created>
       <updated>1403556624263</updated>
       <workItem from="1403556628441" duration="1145000" />
-      <workItem from="1403988069846" duration="1918000" />
+      <workItem from="1403988069846" duration="2092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3063000" />
+    <option name="totallyTimeSpent" value="3237000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="22" width="1626" height="1028" extended-state="0" />
@@ -679,18 +682,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/css/index.css">
+    <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="36" selection-start="2959" selection-end="2959" vertical-scroll-proportion="0.0" vertical-offset="727" max-vertical-offset="1785">
-          <folding />
+        <state line="31" column="35" selection-start="1473" selection-end="1473" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="1860">
+          <folding>
+            <element signature="n#style#0;n#h4#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
+    <entry file="file://$PROJECT_DIR$/www/css/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="35" selection-start="1473" selection-end="1473" vertical-scroll-proportion="0.5338691" vertical-offset="0" max-vertical-offset="1860">
+        <state line="179" column="0" selection-start="4124" selection-end="4124" vertical-scroll-proportion="0.9810056" vertical-offset="1807" max-vertical-offset="2775">
           <folding>
-            <element signature="n#style#0;n#h4#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#2852#3007#2" expanded="true" />
           </folding>
         </state>
       </provider>
