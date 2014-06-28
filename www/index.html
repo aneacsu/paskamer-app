@@ -24,13 +24,91 @@
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>PhoneGap</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        <div class="header">
+            <img class="mp-logo" src="images/marktplaats-logo2.png">
+
+            <h4 id="paskamer-logo" style="display: inline;">Paskamer</h4>
+            <i class="icon-align-center"></i>
         </div>
+
+        <div id="content-container" class="container mannequin">
+            <!--<img class="outline" src="images/body.png">-->
+
+            <!-- <button type="button" id="random-button" class="btn btn-default btn-lg"><span>Random</span></div> -->
+            <div id="bg-image"></div>
+            <div class="slot-container" >
+                <div class="slot slot-top"><img class="slot-image" src="images/shirt2.jpg"></div>
+                <div class="slot-menu-container">
+                    <select class="select-menu-type select-menu-type-top">
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="jassen">Jacket</option>
+                        <option value="truien">Sweater</option>
+                    </select>
+                    <select class="select-menu-size select-menu-size-top">
+                        <option value="any">Any</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <input type="checkbox" class="checkbox-lock checkbox-lock-top" >
+                </div>
+            </div>
+            <div class="slot-container">
+                <div class="slot slot-center"><img class="slot-image" src="images/pants2.jpg"></div>
+                <div class="slot-menu-container">
+                    <select class="select-menu-type select-menu-type-center">
+                        <option value="broeken">Pants</option>
+                        <option value="rokken">Skirt</option>
+                        <option value="jurken">Dress</option>
+                    </select>
+                    <select class="select-menu-size select-menu-size-center">
+                        <option value="any">Any</option>
+                        <option value="xs">XS</option>
+                        <option value="s">S</option>
+                        <option value="m">M</option>
+                        <option value="l">L</option>
+                        <option value="xl">XL</option>
+                    </select>
+                    <input type="checkbox" class="checkbox-lock checkbox-lock-center">
+                </div>
+            </div>
+            <div class="slot-container">
+                <div class="slot slot-bottom"><img class="slot-image" src="images/shoes2.jpg"></div>
+                <div class="slot-menu-container">
+                    <select class="select-menu-type select-menu-type-bottom">
+                        <option value="schoenen">Shoes</option>
+                        <option value="sandalen">Sandals</option>
+                        <option value="laarzen">Boots</option>
+                    </select>
+                    <select class="select-menu-size select-menu-size-bottom">
+                        <option value="any">Any</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                    </select>
+                    <input type="checkbox" class="checkbox-lock checkbox-lock-bottom">
+                </div>
+            </div>
+            <div id="bottom-buttons-container">
+                <button type="button" id="create-button" class="btn btn-primary btn-lg"><span>Create</span>
+                    <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span>Randomize</span>
+            </div>
+
+
+        </div>
+
+        <footer>
+            <script data-main="js/main" src="{staticDomain}/js/lib/ext/requirejs/require.js"></script>
+        </footer>
+
+
+
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
