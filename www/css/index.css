@@ -32,16 +32,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 26, ../scss/_fonts/icons.scss */
-.icon-cog:before {
-    content: "\e600";
-}
-
-/* line 29, ../scss/_fonts/icons.scss */
-.icon-t-shirt:before {
-    content: "\e601";
-}
-
 /* line 1, ../scss/_modules/_header.scss */
 .header {
     background-color: #ad1d28;
