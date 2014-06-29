@@ -26,25 +26,37 @@
     </head>
     <body>
         <div class="header">
-            <img class="mp-logo" src="img/marktplaats-logo2.png">
+            <span class="icon-t-shirt nav-toggler toggle-push-left"></span>
+
+            <object id="svg-logo" width="15" height="24" data="images/logo.svg" type="image/svg+xml">
+                <div><span>Marktplaats</span></div>
+            </object>
 
             <h4 id="paskamer-logo" style="display: inline;">Paskamer</h4>
-            <i class="icon-align-center"></i>
+            <span class="icon-cog nav-toggler toggle-push-right"></span>
         </div>
 
-        <div id="content-container" class="container mannequin">
-            <!--<img class="outline" src="img/body.png">-->
+        <div class="mask"></div>
 
-            <!-- <button type="button" id="random-button" class="btn btn-default btn-lg"><span>Random</span></div> -->
-            <div id="bg-image"></div>
-            <div class="slot-container" >
-                <div class="slot slot-top"><img class="slot-image" src="img/shirt2.jpg"></div>
-                <div class="slot-menu-container">
+        <nav class="menu push-menu-left">
+            <ul>
+                <li><button class="close-menu">&larr; Close</button></li>
+                <li>My Outfits</li>
+
+            </ul>
+        </nav>
+
+        <nav class="menu push-menu-right">
+            <ul>
+                <li><button class="close-menu">Close &rarr;</button></li>
+                <li class="slot-settings-container">
+                    <span class="right-menu-label">Type:</span>
                     <select class="select-menu-type select-menu-type-top">
                         <option value="tshirt">T-Shirt</option>
                         <option value="jassen">Jacket</option>
                         <option value="truien">Sweater</option>
                     </select>
+                    <span class="right-menu-label">Size:</span>
                     <select class="select-menu-size select-menu-size-top">
                         <option value="any">Any</option>
                         <option value="xs">XS</option>
@@ -53,17 +65,15 @@
                         <option value="l">L</option>
                         <option value="xl">XL</option>
                     </select>
-                    <input type="checkbox" class="checkbox-lock checkbox-lock-top" >
-                </div>
-            </div>
-            <div class="slot-container">
-                <div class="slot slot-center"><img class="slot-image" src="img/pants2.jpg"></div>
-                <div class="slot-menu-container">
+                </li>
+                <li class="slot-settings-container">
+                    <span class="right-menu-label">Type:</span>
                     <select class="select-menu-type select-menu-type-center">
                         <option value="broeken">Pants</option>
                         <option value="rokken">Skirt</option>
                         <option value="jurken">Dress</option>
                     </select>
+                    <span class="right-menu-label">Size:</span>
                     <select class="select-menu-size select-menu-size-center">
                         <option value="any">Any</option>
                         <option value="xs">XS</option>
@@ -72,17 +82,15 @@
                         <option value="l">L</option>
                         <option value="xl">XL</option>
                     </select>
-                    <input type="checkbox" class="checkbox-lock checkbox-lock-center">
-                </div>
-            </div>
-            <div class="slot-container">
-                <div class="slot slot-bottom"><img class="slot-image" src="img/shoes2.jpg"></div>
-                <div class="slot-menu-container">
+                </li>
+                <li class="slot-settings-container">
+                    <span class="right-menu-label">Type:</span>
                     <select class="select-menu-type select-menu-type-bottom">
                         <option value="schoenen">Shoes</option>
                         <option value="sandalen">Sandals</option>
                         <option value="laarzen">Boots</option>
                     </select>
+                    <span class="right-menu-label">Size:</span>
                     <select class="select-menu-size select-menu-size-bottom">
                         <option value="any">Any</option>
                         <option value="35">35</option>
@@ -93,27 +101,73 @@
                         <option value="40">40</option>
                         <option value="41">41</option>
                     </select>
-                    <input type="checkbox" class="checkbox-lock checkbox-lock-bottom">
+                </li>
+            </ul>
+        </nav>
+
+        <div id="content-container" class="container mannequin">
+            <div id="create-outfit-container">
+                <div id="create-outfit-close-button">X</div>
+                <h3>Create Outfit</h3>
+                <div class="create-outfit-form">
+                    <span class="outfit-name-label">name:</span>
+                    <input class="outfit-name-input" type="text"/>
+                    <button type="button" id="create-confirm-button" class="btn btn-primary btn-lg"><span>OK</span></button>
+                    <span id="totalValue" class="outfit-name-label"></span>
+                    <span class="outfit-name-label"> &euro;</span>
                 </div>
             </div>
-            <div id="bottom-buttons-container">
-                <button type="button" id="create-button" class="btn btn-primary btn-lg"><span>Create</span>
-                    <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span>Randomize</span>
+            <div id="bg-image"></div>
+            <div class="slot-container" >
+                <form class="add-button-form">
+                <span id="uploadTopImage" class="add-button add-button-top">
+                    <img src="images/plus-sign.png">
+                </span>
+                    <input style="display:none" type="file" id="uploadTop" accept="image/*" name="file"><br>
+                </form>
+
+                <div class="slot slot-top"><img class="slot-image" id="top-image" src="images/shirt2.jpg"></div>
+                <span id="top-price" style="display:none">0</span>
+
+            <span class="lock lock-top" data-locked="false">
+                <img src="images/unlock-icon.png">
+            </span>
             </div>
-
-
+            <div class="slot-container">
+                <form class="add-button-form">
+                <span id="uploadCenterImage" class="add-button add-button-center">
+                    <img src="images/plus-sign.png">
+                </span>
+                    <input style="display:none" type="file" id="uploadCenter" accept="image/*" name="file"><br>
+                </form>
+                <div class="slot slot-center"><img class="slot-image" id="center-image" src="images/pants2.jpg"></div>
+                <span id="center-price" style="display:none">0</span>
+            <span class="lock lock-center" data-locked="false">
+                <img src="images/unlock-icon.png">
+            </span>
+            </div>
+            <div class="slot-container">
+                <form class="add-button-form">
+                <span id="uploadBottomImage" class="add-button add-button-bottom">
+                    <img src="images/plus-sign.png">
+                </span>
+                    <input style="display:none" type="file" id="uploadBottom" accept="image/*" name="file"><br>
+                </form>
+                <div class="slot slot-bottom"><img class="slot-image" id="bottom-image" src="images/shoes2.jpg"></div>
+                <span id="bottom-price" style="display:none">0</span>
+            <span class="lock lock-bottom" data-locked="false">
+                <img src="images/unlock-icon.png">
+            </span>
+            </div>
+            <div id="bottom-buttons-container">
+                <button type="button" id="create-button" class="btn btn-primary btn-lg"><span><img src="images/create-outfit-icon.png"></span></button>
+                <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span><img src="images/shuffle-icon.png"></span></button>
+                <!-- <button type="button" id="post-facebook" class="btn btn-default btn-lg"><span>post</span></button> -->
+            </div>
         </div>
 
         <footer>
-            <script data-main="js/main" src="{staticDomain}/js/lib/ext/requirejs/require.js"></script>
+            <script data-main="js/main" src="{staticDomain}/js/lib/require.js"></script>
         </footer>
-
-
-
-        <script type="text/javascript" src="phonegap.js"></script>
-        <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
-            app.initialize();
-        </script>
     </body>
 </html>
