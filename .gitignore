@@ -1,1 +1,14 @@
+# Intellij files
 .idea
+*.iml
+
+# Cordova platform-specific folders
+platforms
+plugins
+
+# Cordova output files
+info.txt
+
+# Cordova outdated files and folders
+.cordova
+
