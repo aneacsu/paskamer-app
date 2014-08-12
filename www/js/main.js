@@ -23,4 +23,5 @@ require(['Paskamer-client'], function(Paskamer) {
     document.addEventListener('deviceready', function() {
         new Paskamer().start();
     }, false);
+    // add listener to make it work on browser
 });
