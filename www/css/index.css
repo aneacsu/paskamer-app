@@ -347,8 +347,8 @@ body.pmr-open #wrapper {
 
 /* line 1, ../scss/_modules/_other.scss */
 #content-container {
-    width: 384px;
-    height: 640px;
+    width: 100%;
+    height: 100%;
     position: relative;
     z-index: 1;
 }
