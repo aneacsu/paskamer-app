@@ -36,6 +36,9 @@
 .header {
     background-color: #ad1d28;
     line-height: 40px;
+    width: 384px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 /* line 6, ../scss/_modules/_header.scss */
@@ -347,7 +350,7 @@ body.pmr-open #wrapper {
 
 /* line 1, ../scss/_modules/_other.scss */
 #content-container {
-    width: 100%;
+    width: 384px;
     height: 100%;
     position: relative;
     z-index: 1;
