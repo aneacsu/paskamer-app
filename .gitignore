@@ -12,3 +12,5 @@ info.txt
 # Cordova outdated files and folders
 .cordova
 
+www/cordova.js
+
