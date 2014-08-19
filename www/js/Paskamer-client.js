@@ -19,10 +19,8 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                 center: $('.slot-center img'),
                 bottom: $('.slot-bottom img')
             });
-
             var menu = new SlideMenu();
             menu.init();
-
             this.initCapiRandomButton();
             this.initCreateButton();
             this.initCloseCreateFormButton();
@@ -32,11 +30,22 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             this.imageUploader = new ImageUploader();
             this.imageUploader.init();
             this.initRoulette();
+            this.initTabs();
         },
 
         initRoulette: function() {
             this.roulette = new Roulette(this.imageLoader);
             this.roulette.init();
+        },
+
+        initTabs: function() {
+            $('.tab-container').css({'display': 'none'});
+            $('#createTab').css({'display': 'block'});
+            $('#navTabs .tab-button').click(function (e) {
+                e.preventDefault();
+                $('.tab-container').css({'display': 'none'});
+                $('#' + $(this).attr('id') + 'Tab').css({'display': 'block'});
+            });
         },
 
         initLockItem: function () {

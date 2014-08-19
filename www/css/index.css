@@ -32,6 +32,11 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+    background-color: #108a93 !important;
+    background-image: none;
+}
+
 /* line 1, ../scss/_modules/_header.scss */
 .header {
     background-color: #ad1d28;
@@ -39,6 +44,18 @@
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+}
+
+.nav-tabs {
+    background-color: #ad1d28;
+    margin-bottom: 0;
+}
+
+#navTabs {
+    margin-bottom: 0;
+}
+
+.tab-container {
 }
 
 /* line 6, ../scss/_modules/_header.scss */

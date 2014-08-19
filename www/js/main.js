@@ -9,7 +9,7 @@ require.config({
         jquery: 'lib/jquery.min',
         underscore: 'lib/underscore-min',
         hammer: 'lib/hammer.min',
-        velocity: 'lib/jquery.velocity.min'
+        velocity: 'lib/jquery.velocity.min',
     },
     
     shim: {
@@ -17,7 +17,7 @@ require.config({
     }
 });
 
-require(['Paskamer-client'], function(Paskamer) {
+require(['paskamer-client'], function(Paskamer) {
     console.log('Starting Paskamer');
 
     document.addEventListener('deviceready', function() {
