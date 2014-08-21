@@ -41,10 +41,18 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
         },
 
         initTabs: function() {
-            $('.tab').click(function() {
-                $('.tab:parent').removeClass('red-bg');
-                $(this).parent().addClass('red-bg');
-            });
+//            // init
+//            $('#create:parent').addClass('red-bg');
+//
+//            $('.tab').click(function() {
+//                $('.tab:parent').removeClass('red-bg');
+//                $(this).parent().addClass('red-bg');
+//
+//                $('tab-container').css('display','none');
+//                $('').css('display','none');
+//            });
+
+
         },
 
         initLockItem: function () {
