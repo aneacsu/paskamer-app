@@ -76,12 +76,20 @@
     background-color: #ad1d28;
 }
 
+.nav {
+    margin-bottom: 0 !important;
+}
+
 .tab {
     color: white;
 }
 
-.red-bg {
-    background-color: #ad1d28;
+.display-none {
+    display: none;
+}
+
+.display-block {
+    display: block;
 }
 
 /* line 14, ../scss/_modules/_slidemenu.scss */

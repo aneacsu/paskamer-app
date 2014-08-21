@@ -27,9 +27,9 @@
             <!--<span class="icon-cog nav-toggler toggle-push-right"></span>-->
         <!--</div>-->
         <ul class="nav nav-tabs">
-            <li><a id="create" class="tab">Create</a></li>
-            <li><a class="tab">Get inspired</a></li>
-            <li><a class="tab">Messages</a></li>
+            <li class="active"><a id="create" class="tab">Create</a></li>
+            <li><a id="explore" class="tab">Get inspired</a></li>
+            <li><a id="inventory" class="tab">My stuff</a></li>
         </ul>
 
         <div class="mask"></div>
@@ -99,8 +99,10 @@
                 </li>
             </ul>
         </nav>
-        
-        <div id="content-container" class="container mannequin">
+
+
+        <div id="createContent" class="tab-container">
+            <div id="content-container" class="container mannequin">
             <div id="create-outfit-container">
                 <div id="create-outfit-close-button">X</div>
                 <h3>Create outfit</h3>
@@ -159,6 +161,18 @@
                 <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span><img src="img/shuffle-icon.png"></span></button>
             </div>
         </div>
+        </div>
+
+        <div id="exploreContent" class="tab-container display-none">
+            EXPLORE LA LA LA
+        </div>
+
+        <div id="inventoryContent" class="tab-container display-none">
+            INVENTORY LA LA LA
+        </div>
+
+
+
 
         <footer>
             <script src="cordova.js"></script>

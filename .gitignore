@@ -13,4 +13,4 @@ info.txt
 .cordova
 
 www/cordova.js
-
+www/cordova_plugins.js
