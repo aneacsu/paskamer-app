@@ -32,11 +32,19 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             this.imageUploader = new ImageUploader();
             this.imageUploader.init();
             this.initRoulette();
+            this.initTabs();
         },
 
         initRoulette: function() {
             this.roulette = new Roulette(this.imageLoader);
             this.roulette.init();
+        },
+
+        initTabs: function() {
+            $('.tab').click(function() {
+                $('.tab:parent').removeClass('red-bg');
+                $(this).parent().addClass('red-bg');
+            });
         },
 
         initLockItem: function () {

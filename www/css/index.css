@@ -72,6 +72,18 @@
     display: none;
 }
 
+.nav-tabs {
+    background-color: #ad1d28;
+}
+
+.tab {
+    color: white;
+}
+
+.red-bg {
+    background-color: #ad1d28;
+}
+
 /* line 14, ../scss/_modules/_slidemenu.scss */
 nav.menu {
     position: fixed;
