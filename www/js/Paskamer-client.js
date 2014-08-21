@@ -41,7 +41,12 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
         },
 
         initTabs: function() {
+            var first = true;
             $('.tab').click(function() {
+                if (first){
+                    $('#create').parent().removeClass('active');
+                    first = false;
+                }
                 $('.tab-container').addClass('display-none');
                 $('#' + $(this).attr('id') + 'Content').removeClass('display-none');
             });
