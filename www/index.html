@@ -100,71 +100,80 @@
             </ul>
         </nav>
 
-
+        <div id="bg-image"></div>
         <div id="createContent" class="tab-container">
-            <div id="content-container" class="container mannequin">
-            <div id="create-outfit-container">
-                <div id="create-outfit-close-button">X</div>
-                <h3>Create outfit</h3>
-                <div class="create-outfit-form">
-                    <span class="outfit-name-label">name:</span>
-                    <input class="outfit-name-input" type="text"/>
-                    <button type="button" id="create-confirm-button" class="btn btn-primary btn-lg"><span>OK</span></button>
-                    <span id="totalValue" class="outfit-name-label"></span>
-                    <span class="outfit-name-label"> &euro;</span>
+            <div id="create-content-container" class="container mannequin">
+                <div id="create-outfit-container">
+                    <div id="create-outfit-close-button">X</div>
+                    <h3>Create outfit</h3>
+                    <div class="create-outfit-form">
+                        <span class="outfit-name-label">name:</span>
+                        <input class="outfit-name-input" type="text"/>
+                        <button type="button" id="create-confirm-button" class="btn btn-primary btn-lg"><span>OK</span></button>
+                        <span id="totalValue" class="outfit-name-label"></span>
+                        <span class="outfit-name-label"> &euro;</span>
+                    </div>
+                </div>
+                <div class="slot-container" >
+                    <form class="add-button-form">
+                        <span id="uploadTopImage" class="add-button add-button-top">
+                            <img src="img/plus-sign.png">
+                        </span>
+                        <input style="display:none" type="file" id="uploadTop" accept="image/*" name="file"><br>
+                    </form>
+
+                    <div class="slot slot-top"><img class="slot-image" id="top-image" src="img/shirt.jpg"></div>
+                    <span id="top-price" style="display:none">0</span>
+
+                    <span class="lock lock-top" data-locked="false">
+                        <img src="img/unlock-icon.png">
+                    </span>
+                </div>
+                <div class="slot-container">
+                    <form class="add-button-form">
+                        <span id="uploadCenterImage" class="add-button add-button-center">
+                            <img src="img/plus-sign.png">
+                        </span>
+                        <input style="display:none" type="file" id="uploadCenter" accept="image/*" name="file"><br>
+                    </form>
+                    <div class="slot slot-center"><img class="slot-image" id="center-image" src="img/pants.jpg"></div>
+                    <span id="center-price" style="display:none">0</span>
+                    <span class="lock lock-center" data-locked="false">
+                        <img src="img/unlock-icon.png">
+                    </span>
+                </div>
+                <div class="slot-container">
+                    <form class="add-button-form">
+                        <span id="uploadBottomImage" class="add-button add-button-bottom">
+                            <img src="img/plus-sign.png">
+                        </span>
+                        <input style="display:none" type="file" id="uploadBottom" accept="image/*" name="file"><br>
+                    </form>
+                    <div class="slot slot-bottom"><img class="slot-image" id="bottom-image" src="img/shoes.jpg"></div>
+                    <span id="bottom-price" style="display:none">0</span>
+                    <span class="lock lock-bottom" data-locked="false">
+                        <img src="img/unlock-icon.png">
+                    </span>
+                </div>
+                <div id="bottom-buttons-container">
+                    <button type="button" id="create-button" class="btn btn-primary btn-lg"><span><img src="img/create-outfit-icon.png"></span></button>
+                    <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span><img src="img/shuffle-icon.png"></span></button>
                 </div>
             </div>
-            <div id="bg-image"></div>
-            <div class="slot-container" >
-                <form class="add-button-form">
-                    <span id="uploadTopImage" class="add-button add-button-top">
-                        <img src="img/plus-sign.png">
-                    </span>
-                    <input style="display:none" type="file" id="uploadTop" accept="image/*" name="file"><br>
-                </form>
-    
-                <div class="slot slot-top"><img class="slot-image" id="top-image" src="img/shirt.jpg"></div>
-                <span id="top-price" style="display:none">0</span>
-    
-                <span class="lock lock-top" data-locked="false">
-                    <img src="img/unlock-icon.png">
-                </span>
-            </div>
-            <div class="slot-container">
-                <form class="add-button-form">
-                    <span id="uploadCenterImage" class="add-button add-button-center">
-                        <img src="img/plus-sign.png">
-                    </span>
-                    <input style="display:none" type="file" id="uploadCenter" accept="image/*" name="file"><br>
-                </form>
-                <div class="slot slot-center"><img class="slot-image" id="center-image" src="img/pants.jpg"></div>
-                <span id="center-price" style="display:none">0</span>
-                <span class="lock lock-center" data-locked="false">
-                    <img src="img/unlock-icon.png">
-                </span>
-            </div>
-            <div class="slot-container">
-                <form class="add-button-form">
-                    <span id="uploadBottomImage" class="add-button add-button-bottom">
-                        <img src="img/plus-sign.png">
-                    </span>
-                    <input style="display:none" type="file" id="uploadBottom" accept="image/*" name="file"><br>
-                </form>
-                <div class="slot slot-bottom"><img class="slot-image" id="bottom-image" src="img/shoes.jpg"></div>
-                <span id="bottom-price" style="display:none">0</span>
-                <span class="lock lock-bottom" data-locked="false">
-                    <img src="img/unlock-icon.png">
-                </span>
-            </div>
-            <div id="bottom-buttons-container">
-                <button type="button" id="create-button" class="btn btn-primary btn-lg"><span><img src="img/create-outfit-icon.png"></span></button>
-                <button type="button" id="capi-random-button" class="btn btn-default btn-lg"><span><img src="img/shuffle-icon.png"></span></button>
-            </div>
-        </div>
         </div>
 
         <div id="exploreContent" class="tab-container display-none">
-            EXPLORE LA LA LA
+            <div id="explore-content-container" class="container mannequin">
+                <div class="slot-container" >
+                    <div class="slot slot-center"><img class="slot-image" id="explore-top-image" src="img/shirt.jpg"></div>
+                </div>
+                <div class="slot-container" >
+                    <div class="slot slot-center"><img class="slot-image" id="explore-center-image" src="img/pants.jpg"></div>
+                </div>
+                <div class="slot-container" >
+                    <div class="slot slot-center"><img class="slot-image" id="explore-bottom-image" src="img/shoes.jpg"></div>
+                </div>
+            </div>
         </div>
 
         <div id="inventoryContent" class="tab-container display-none">
