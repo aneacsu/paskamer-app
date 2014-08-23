@@ -33,11 +33,19 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             this.imageUploader.init();
             this.initRoulette();
             this.initTabs();
+            this.initIntro();
         },
 
         initRoulette: function() {
             this.roulette = new Roulette(this.imageLoader);
             this.roulette.init();
+        },
+
+        initIntro: function() {
+            $('#name-confirm-button').click(function () {
+                $('#introContainer').css('display', 'none');
+            });
+
         },
 
         initTabs: function() {

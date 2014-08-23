@@ -622,6 +622,20 @@ body.pmr-open #wrapper {
     z-index: 100;
 }
 
+#introContainer {
+    /*display: none;*/
+    margin-top: 20px;
+    width: 300px;
+    height: 450px;
+    border: 2px solid #12a5b0;
+    background-image: -webkit-radial-gradient(circle, #12a5b0, #0f8790);
+    position: absolute;
+    text-align: center;
+    top: 40px;
+    left: 48px;
+    z-index: 100;
+}
+
 /* line 14, ../scss/_modules/_create.scss */
 #create-outfit-close-button {
     position: absolute;
@@ -641,20 +655,52 @@ body.pmr-open #wrapper {
 
 /* line 29, ../scss/_modules/_create.scss */
 .outfit-name-label {
-    font-size: 18px;
+    font-size: 14px;
     margin: 5px 8px;
+}
+
+.intro-form-label {
+    font-size: 13px;
+    margin: 5px 8px 0 0;
+}
+
+.username-form {
+    margin: 15px 15px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.sizes-form {
+    margin: 15px 15px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
 }
 
 /* line 34, ../scss/_modules/_create.scss */
 input.outfit-name-input {
     width: 130px;
     height: 34px;
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+}
+
+/* line 34, ../scss/_modules/_create.scss */
+input.username-input {
+    width: 140px;
+    height: 34px;
+    margin-bottom: 0 !important;
 }
 
 /* line 40, ../scss/_modules/_create.scss */
 #create-confirm-button {
     display: inline;
+    margin-left: 5px;
+}
+
+#name-confirm-button {
+    display: inline;
+    margin-top: 10px;
+    width: 256px;
 }
 
 /* line 5, ../scss/_modules/_add.scss */
