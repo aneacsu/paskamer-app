@@ -41,12 +41,19 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
         },
 
         initTabs: function() {
+            $('#create').parent().addClass('active-tab');
+
             var first = true;
             $('.tab').click(function() {
                 if (first){
                     $('#create').parent().removeClass('active');
                     first = false;
                 }
+                // highlight tab
+                $('.tab').parent().removeClass('active-tab');
+                $(this).parent().addClass('active-tab');
+
+                // show content
                 $('.tab-container').addClass('display-none');
                 $('#' + $(this).attr('id') + 'Content').removeClass('display-none');
             });
@@ -67,7 +74,7 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
         },
 
         initCapiRandomButton: function () {
-            $('#capi-random-button').click(_.bind(function () {
+            $('#random-items-button').click(_.bind(function () {
                 var params = {};
 
                 if ($('.lock-top').attr('data-locked') == 'false') {

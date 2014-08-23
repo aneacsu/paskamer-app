@@ -86,6 +86,20 @@
     color: white;
 }
 
+.active-tab {
+    text-decoration: none;
+    background-color: #eee;
+    border-color: #eee #eee #ddd;
+    webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+}
+
+.active-tab a {
+    color: #005580;
+
+}
+
 .display-none {
     display: none;
 }
@@ -382,19 +396,29 @@ body.pmr-open #wrapper {
 }
 
 /* line 8, ../scss/_modules/_other.scss */
-#bottom-buttons-container {
+.bottom-buttons-container {
     margin-top: 11px;
 }
 
 /* line 12, ../scss/_modules/_other.scss */
-#capi-random-button {
+#random-items-button {
     width: 100px;
     padding: 5px 6px;
     margin-left: 30px;
 }
 
 /* line 18, ../scss/_modules/_other.scss */
-#capi-random-button img {
+#random-items-button img {
+    width: 30px;
+}
+
+#random-outfit-button {
+    width: 156px;
+    padding: 5px 6px;
+}
+
+/* line 18, ../scss/_modules/_other.scss */
+#random-outfit-button img {
     width: 30px;
 }
 
@@ -414,7 +438,7 @@ body.pmr-open #wrapper {
 #bg-image {
     background-image: url('../img/woman.png');
     width: 100%;
-    height: 100%;
+    height: 94%;
     position: absolute;
     background-repeat: no-repeat;
     z-index: -1;
