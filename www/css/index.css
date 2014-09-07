@@ -108,6 +108,10 @@
     display: block;
 }
 
+.my-outfits li {
+    list-style-type: none;
+}
+
 /* line 14, ../scss/_modules/_slidemenu.scss */
 nav.menu {
     position: fixed;
