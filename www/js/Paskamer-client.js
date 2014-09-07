@@ -131,9 +131,9 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             $('#create-confirm-button').click(_.bind(function () {
                 var newOutfit = {
                     name: $('.outfit-name-input').val(),
-                    imgTop: $('.slot-top img').attr('src'),
-                    imgCenter: $('.slot-center img').attr('src'),
-                    imgBottom: $('.slot-bottom img').attr('src'),
+                    imgTop: $('#top-image').attr('src'),
+                    imgCenter: $('#center-image').attr('src'),
+                    imgBottom: $('#bottom-image').attr('src'),
                     timestamp: new Date()
                 };
                 this.outfits.push(newOutfit);
@@ -165,11 +165,9 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
 
         initRetrieveOutfit: function() {
             $( "body" ).delegate('.outfit-list-item', 'click', function () {
-                $('.slot-top img').attr('src',$(this).find('.item-list-img-top img').attr('src'));
-                $('.slot-center img').attr('src',$(this).find('.item-list-img-center img').attr('src'));
-                $('.slot-bottom img').attr('src',$(this).find('.item-list-img-bottom img').attr('src'));
-                
-                $(".close-menu").click();
+                $('#top-image').attr('src',$(this).find('.item-list-img-top img').attr('src'));
+                $('#center-image').attr('src',$(this).find('.item-list-img-center img').attr('src'));
+                $('#bottom-image').attr('src',$(this).find('.item-list-img-bottom img').attr('src'));
             });
         }
     });
