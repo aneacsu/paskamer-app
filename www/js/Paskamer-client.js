@@ -166,7 +166,7 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                 $('#top-image').attr('src',$(this).find('.item-list-img-top img').attr('src'));
                 $('#center-image').attr('src',$(this).find('.item-list-img-center img').attr('src'));
                 $('#bottom-image').attr('src',$(this).find('.item-list-img-bottom img').attr('src'));
-                $('#explore').click();
+                $('#create').click();
             });
         }
     });
