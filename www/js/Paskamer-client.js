@@ -23,7 +23,7 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             var menu = new SlideMenu();
             menu.init();
 
-            this.initCapiRandomButton();
+            this.initRandomButton();
             this.initCreateButton();
             this.initCloseCreateFormButton();
             this.initConfirmCreateFormButton();
@@ -80,70 +80,23 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             });
         },
 
-        initCapiRandomButton: function () {
+        initRandomButton: function () {
             $('#random-items-button').click(_.bind(function () {
                 var params = {};
 
-                $.ajax({
-                    url: 'http://149.210.145.128:8080/random',
-                    success: function (data) {
-                        console.log(data);
-                        if ($('.lock-top').attr('data-locked') == 'false') {
-                            $('#top-image').attr('src', data[0]['imageUrl']);
-                        }
-                        if ($('.lock-center').attr('data-locked') == 'false') {
-                            $('#center-image').attr('src', data[1]['imageUrl']);
-                        }
-                        if ($('.lock-bottom').attr('data-locked') == 'false') {
-                            $('#bottom-image').attr('src', data[2]['imageUrl']);
-                        }
-                        this.imageLoader.update(params);
-                    }
-                });
+                if ($('.lock-top').attr('data-locked') == 'false') {
+                    params["top"] = $('.select-menu-type-top :selected').attr('value');
+                }
+                if ($('.lock-center').attr('data-locked') == 'false') {
+                    params['center'] = $('.select-menu-type-center :selected').attr('value');
+                }
+                if ($('.lock-bottom').attr('data-locked') == 'false') {
+                    params['bottom'] = $('.select-menu-type-bottom :selected').attr('value');
+                }
 
-
+                this.imageLoader.update(params);
             }, this));
         },
-
-//        initCapiRandomButton: function () {
-//            $('#random-items-button').click(_.bind(function () {
-//                var params = {};
-//
-//                $.ajax({
-//                    url: 'http://149.210.145.128:9090/random',
-//                    data: 'json',
-//                    success: function (data) {
-//                        if ($('.lock-top').attr('data-locked') == 'false') {
-//                            params["top"] = {
-//                                'type': $('.select-menu-type-top :selected').attr('value'),
-//                                'size': '',
-//                                'condition': '',
-//                                'color': ''
-//                            };
-//                        }
-//                        if ($('.lock-center').attr('data-locked') == 'false') {
-//                            params['center'] = {
-//                                'type': $('.select-menu-type-center :selected').attr('value'),
-//                                'size': '',
-//                                'condition': '',
-//                                'color': ''
-//                            };
-//                        }
-//                        if ($('.lock-bottom').attr('data-locked') == 'false') {
-//                            params['bottom'] = {
-//                                'type': $('.select-menu-type-bottom :selected').attr('value'),
-//                                'size': '',
-//                                'condition': '',
-//                                'color': ''
-//                            };
-//                        }
-//                        this.imageLoader.update(params);
-//                    }
-//                });
-//
-//
-//            }, this));
-//        },
 
         initCreateButton: function () {
             $('#create-button').click(function () {
