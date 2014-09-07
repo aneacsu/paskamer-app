@@ -148,9 +148,9 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                     '<span class="item-list-img"><img class="item-list-thumbnail-buy" src="img/buy-icon.png"></span>' +
                     '<div class=""></div>' +
                     '</li>');
-                $('.push-menu-left').append(listItem);
+                $('#inventoryContent').append(listItem);
 
-                $('.outfit-name-input').val("")
+                $('.outfit-name-input').val("");
                 $('#create-outfit-container').css({'display': 'none'});
                 console.log(this.outfits)
 
