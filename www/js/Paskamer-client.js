@@ -105,11 +105,11 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                         }
                         if ($('.lock-center').attr('data-locked') == 'false') {
                             $('#center-image').attr('src', data[1]['imageUrl']);
-                            $('#top-price').text(parseInt(data[1]['price']) / 100);
+                            $('#center-price').text(parseInt(data[1]['price']) / 100);
                         }
                         if ($('.lock-bottom').attr('data-locked') == 'false') {
                             $('#bottom-image').attr('src', data[2]['imageUrl']);
-                            $('#top-price').text(parseInt(data[2]['price']) / 100);
+                            $('#bottom-price').text(parseInt(data[2]['price']) / 100);
                         }
 //                        this.imageLoader.update(params);
                     }
