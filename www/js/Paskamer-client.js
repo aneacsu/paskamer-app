@@ -140,7 +140,7 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
 
                 // populate my outfits list
                 var listItem = $('<li class="outfit-list-item">' +
-                    '<span class="item-list-name">' + '  ' + newOutfit['name'] + '</span>' +
+                    '<span class="item-list-name">' + newOutfit['name'] + '</span>' +
                     '<span class="item-list-img item-list-img-top"><img class="item-list-thumbnail" src="' + newOutfit['imgTop'] + '"></span>' +
                     '<span class="item-list-img item-list-img-center"><img class="item-list-thumbnail" src="' + newOutfit['imgCenter'] + '"></span>' +
                     '<span class="item-list-img item-list-img-bottom"><img class="item-list-thumbnail" src="' + newOutfit['imgBottom'] + '"></span>' +
