@@ -330,6 +330,7 @@ body.pmr-open #wrapper {
     display: inline;
     width: 90px;
     word-wrap: break-word;
+    font-weight: bold;
     font-family: 'Georgia', serif;
     text-align: center;
     float: left;
