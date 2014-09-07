@@ -164,11 +164,11 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
         initRetrieveOutfit: function() {
             $( "body" ).delegate('.outfit-list-item', 'click', function () {
                 $('#top-image').attr('src',$(this).find('.item-list-img-top img').attr('src'));
-                $('.lock-top').attr('data-locked', false);
+                $('.lock-top').attr('data-locked', 'false');
                 $('#center-image').attr('src',$(this).find('.item-list-img-center img').attr('src'));
-                $('.lock-center').attr('data-locked', false);
+                $('.lock-center').attr('data-locked', 'false');
                 $('#bottom-image').attr('src',$(this).find('.item-list-img-bottom img').attr('src'));
-                $('.lock-bottom').attr('data-locked', false);
+                $('.lock-bottom').attr('data-locked', 'false');
                 $('#create').click();
             });
         }
