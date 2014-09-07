@@ -33,7 +33,7 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             this.imageUploader.init();
             this.initRoulette();
             this.initTabs();
-            this.initIntro();
+//            this.initIntro();
         },
 
         initRoulette: function() {
@@ -41,12 +41,11 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
             this.roulette.init();
         },
 
-        initIntro: function() {
-            $('#name-confirm-button').click(function () {
-                $('#introContainer').css('display', 'none');
-            });
-
-        },
+//        initIntro: function() {
+//            $('#name-confirm-button').click(function () {
+//                $('#introContainer').css('display', 'none');
+//            });
+//        },
 
         initTabs: function() {
             $('#create').parent().addClass('active-tab');
