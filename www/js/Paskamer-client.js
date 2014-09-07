@@ -101,21 +101,19 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                     success: function (data) {
                         if ($('.lock-top').attr('data-locked') == 'false') {
                             $('#top-image').attr('src', data[0]['imageUrl']);
-                            $('#top-price').text(data[0]['price']);
+                            $('#top-price').text(parseInt(data[0]['price']) / 100);
                         }
                         if ($('.lock-center').attr('data-locked') == 'false') {
                             $('#center-image').attr('src', data[1]['imageUrl']);
-                            $('#top-price').text(data[1]['price']);
+                            $('#top-price').text(parseInt(data[1]['price']) / 100);
                         }
                         if ($('.lock-bottom').attr('data-locked') == 'false') {
                             $('#bottom-image').attr('src', data[2]['imageUrl']);
-                            $('#top-price').text(data[2]['price']);
+                            $('#top-price').text(parseInt(data[2]['price']) / 100);
                         }
 //                        this.imageLoader.update(params);
                     }
                 });
-
-//                this.imageLoader.update(params);
             }, this));
         },
 
