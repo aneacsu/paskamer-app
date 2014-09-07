@@ -94,7 +94,28 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                     params['bottom'] = $('.select-menu-type-bottom :selected').attr('value');
                 }
 
-                this.imageLoader.update(params);
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://149.210.145.128:8080/random',
+                    data: params,
+                    success: function (data) {
+                        if ($('.lock-top').attr('data-locked') == 'false') {
+                            $('#top-image').attr('src', data[0]['imageUrl']);
+                            $('#top-price').text(data[0]['price']);
+                        }
+                        if ($('.lock-center').attr('data-locked') == 'false') {
+                            $('#center-image').attr('src', data[1]['imageUrl']);
+                            $('#top-price').text(data[1]['price']);
+                        }
+                        if ($('.lock-bottom').attr('data-locked') == 'false') {
+                            $('#bottom-image').attr('src', data[2]['imageUrl']);
+                            $('#top-price').text(data[2]['price']);
+                        }
+//                        this.imageLoader.update(params);
+                    }
+                });
+
+//                this.imageLoader.update(params);
             }, this));
         },
 
