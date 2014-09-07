@@ -33,38 +33,32 @@ define([
                         data: params,
                         context: this,
                         success: function (data) {
-                            if (data['top'] !== undefined) {
-                                this.slots.top
-                                    .velocity({
-                                        translateX: "-170px",
-                                        opacity: 0
-                                    });
+                            this.slots.top
+                                .velocity({
+                                    translateX: "-170px",
+                                    opacity: 0
+                                });
 
-                                this.slots.top.attr('src', data['top']['imageUrl']);
-                                $('#top-price').text(data['top']['price']);
-                            }
+                            this.slots.top.attr('src', data[0]['imageUrl']);
+                            $('#top-price').text(data[0]['price']);
 
-                            if (data['center'] !== undefined) {
-                                this.slots.center
-                                    .velocity({
-                                        translateX: "-170px",
-                                        opacity: 0
-                                    });
+                            this.slots.center
+                                .velocity({
+                                    translateX: "-170px",
+                                    opacity: 0
+                                });
 
-                                this.slots.center.attr('src', data['center']['imageUrl']);
-                                $('#center-price').text(data['center']['price']);
-                            }
+                            this.slots.center.attr('src', data[1]['imageUrl']);
+                            $('#center-price').text(data[1]['price']);
 
-                            if (data['bottom'] !== undefined) {
-                                this.slots.bottom
-                                    .velocity({
-                                        translateX: "-170px",
-                                        opacity: 0
-                                    });
+                            this.slots.bottom
+                                .velocity({
+                                    translateX: "-170px",
+                                    opacity: 0
+                                });
 
-                                this.slots.bottom.attr('src', data['bottom']['imageUrl']);
-                                $('#bottom-price').text(data['bottom']['price']);
-                            }
+                            this.slots.bottom.attr('src', data[2]['imageUrl']);
+                            $('#bottom-price').text(data[2]['price']);
                         },
                         dataType: 'json'
                     });
