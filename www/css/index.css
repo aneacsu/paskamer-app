@@ -306,6 +306,14 @@ body.pmr-open #wrapper {
     margin-left: 8px;
 }
 
+.item-list-thumbnail-pinterest {
+    height: 35px;
+    max-width: 35px;
+    padding: 5px 0px;
+    float: right;
+    margin-left: 8px;
+}
+
 /* line 161, ../scss/_modules/_slidemenu.scss */
 .item-list-thumbnail-buy {
     height: 48px;

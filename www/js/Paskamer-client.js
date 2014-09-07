@@ -142,8 +142,8 @@ function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
                     '<span class="item-list-img item-list-img-top"><img class="item-list-thumbnail" src="' + newOutfit['imgTop'] + '"></span>' +
                     '<span class="item-list-img item-list-img-center"><img class="item-list-thumbnail" src="' + newOutfit['imgCenter'] + '"></span>' +
                     '<span class="item-list-img item-list-img-bottom"><img class="item-list-thumbnail" src="' + newOutfit['imgBottom'] + '"></span>' +
-                    '&nbsp;&nbsp;&nbsp;' +
-                    '<span class="item-list-img"><img class="item-list-thumbnail-fb" src="img/facebook.png"></span>' +
+                    '<span class="item-list-img"><img class="item-list-thumbnail-fb" src="img/fb-button.png"></span>' +
+                    '<span class="item-list-img"><img class="item-list-thumbnail-pinterest" src="img/pinterest-button.png"></span>' +
                     '<span class="item-list-img"><img class="item-list-thumbnail-buy" src="img/buy-icon.png"></span>' +
                     '<div class=""></div>' +
                     '</li>');
