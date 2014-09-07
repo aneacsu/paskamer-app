@@ -281,7 +281,7 @@ body.pmr-open #wrapper {
     }
 }
 /* line 142, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-thumbnail {
+.item-list-thumbnail {
     height: 40px;
     max-width: 40px;
     margin-left: 10px;
@@ -289,12 +289,12 @@ body.pmr-open #wrapper {
 }
 
 /* line 149, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-thumbnail-fb:hover {
+.item-list-thumbnail-fb:hover {
     cursor: pointer;
 }
 
 /* line 153, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-thumbnail-fb {
+.item-list-thumbnail-fb {
     height: 35px;
     max-width: 35px;
     padding: 5px 0px;
@@ -303,7 +303,7 @@ body.pmr-open #wrapper {
 }
 
 /* line 161, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-thumbnail-buy {
+.item-list-thumbnail-buy {
     height: 48px;
     max-width: 47px;
     padding-top: 0;
@@ -311,18 +311,18 @@ body.pmr-open #wrapper {
 }
 
 /* line 168, ../scss/_modules/_slidemenu.scss */
-.menu .outfit-list-item {
+.outfit-list-item {
     overflow: hidden;
     *zoom: 1;
 }
 
 /* line 172, ../scss/_modules/_slidemenu.scss */
-.menu .outfit-list-item:hover {
+.outfit-list-item:hover {
     cursor: pointer;
 }
 
 /* line 177, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-name {
+.item-list-name {
     display: inline;
     width: 50px;
     word-wrap: break-word;
@@ -330,7 +330,7 @@ body.pmr-open #wrapper {
 }
 
 /* line 185, ../scss/_modules/_slidemenu.scss */
-.menu .item-list-img {
+.item-list-img {
     display: inline;
     float: left;
 }
