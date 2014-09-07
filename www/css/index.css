@@ -328,10 +328,10 @@ body.pmr-open #wrapper {
 /* line 177, ../scss/_modules/_slidemenu.scss */
 .item-list-name {
     display: inline;
-    width: 150px;
+    width: 80px;
     word-wrap: break-word;
     font-weight: bold;
-    float: left;
+    text-align: center
 }
 
 /* line 185, ../scss/_modules/_slidemenu.scss */
