@@ -192,13 +192,15 @@ savedOutfits["top=truien&center=jurken&bottom=sandalen"] = [];
 savedOutfits["top=truien&center=jurken&bottom=laarzen"] = [];
 
 function getSavedOutfit(key, index) {
-    for (key in savedOutfits) {
-        if (index >= key.length) {
-            index = 0;
-        }
-        if (key.length > 0) {
-            return key[i];
-        }
-    }
-    return {};
+    alert(key);
+    alert(index)
+//    for (key in savedOutfits) {
+//        if (index >= key.length) {
+//            index = 0;
+//        }
+//        if (key.length > 0) {
+//            return key[i];
+//        }
+//    }
+//    return {};
 }

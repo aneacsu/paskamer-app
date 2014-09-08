@@ -126,11 +126,10 @@ define([
 
                     var query = "top=" + topFilter + "&center=" + centerFilter + "&bottom=" + bottomFilter;
 
-                    alert($('#saved-outfit-index').attr('value'));
                     var index = parseInt($('#saved-outfit-index').attr('value'));
                     alert(index);
 
-//                    var outfit = getSavedOutfit(query, index);
+                    var outfit = getSavedOutfit(query, index);
 //                    if (!$.isEmptyObject(outfit)) {
 //                        $('saved-outfit-name').attr('value', outfit.name);
 //                        $('#saved-outfit-index').attr('value', index + 1);
