@@ -131,14 +131,14 @@ define([
                     alert(index);
 
                     var outfit = getSavedOutfit(query, index);
-//                    if (!$.isEmptyObject(outfit)) {
-//                        $('saved-outfit-name').attr('value', outfit.name);
-//                        $('#saved-outfit-index').attr('value', index + 1);
+                    if (!$.isEmptyObject(outfit)) {
+                        $('saved-outfit-name').attr('value', outfit.name);
+                        $('#saved-outfit-index').attr('value', index + 1);
 
-                        $('#explore-top-image').attr('src', 'http://i.marktplaats.com/00/s/NjAwWDgwMA==/z/56cAAOSwd4tUDbsu/$_83.JPG');
-//                        $('#explore-center-image').attr('src', outfit.imgCenter);
-//                        $('#explore-bottom-image').attr('src', outfit.imgBottom);
-//                    }
+                        $('#explore-top-image').attr('src', outfit.imgTop);
+                        $('#explore-center-image').attr('src', outfit.imgCenter);
+                        $('#explore-bottom-image').attr('src', outfit.imgBottom);
+                    }
                 }, this));
             },
 
