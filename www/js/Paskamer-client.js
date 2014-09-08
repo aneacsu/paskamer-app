@@ -128,7 +128,7 @@ define([
 
                     var index = parseInt($('#saved-outfit-index').attr('value'));
 
-                    var outfit = getSavedOutfit(query, index + 1);
+                    var outfit = getSavedOutfit(query, index);
 //                    if (!$.isEmptyObject(outfit)) {
 //                        $('saved-outfit-name').attr('value', outfit.name);
 //                        $('#saved-outfit-index').attr('value', index + 1);
