@@ -120,15 +120,15 @@ define([
             initRandomOutfitButton: function () {
                 $('#random-outfit-button').click(_.bind(function () {
 
-//                    var topFilter = $('.select-menu-type-top :selected').attr('value');
-//                    var centerFilter = $('.select-menu-type-center :selected').attr('value');
-//                    var bottomFilter = $('.select-menu-type-bottom :selected').attr('value');
-//
-//                    var query = "top=" + topFilter + "&center=" + centerFilter + "&bottom=" + bottomFilter;
-//
-//                    var index = parseInt($('#saved-outfit-index').attr('value'));
-//
-//                    var outfit = getSavedOutfit(query, index + 1);
+                    var topFilter = $('.select-menu-type-top :selected').attr('value');
+                    var centerFilter = $('.select-menu-type-center :selected').attr('value');
+                    var bottomFilter = $('.select-menu-type-bottom :selected').attr('value');
+
+                    var query = "top=" + topFilter + "&center=" + centerFilter + "&bottom=" + bottomFilter;
+
+                    var index = parseInt($('#saved-outfit-index').attr('value'));
+
+                    var outfit = getSavedOutfit(query, index + 1);
 //                    if (!$.isEmptyObject(outfit)) {
 //                        $('saved-outfit-name').attr('value', outfit.name);
 //                        $('#saved-outfit-index').attr('value', index + 1);
