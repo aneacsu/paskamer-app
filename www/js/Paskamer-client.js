@@ -4,7 +4,8 @@ define([
         'widgets/SlideMenu',
         'widgets/ImageUploader',
         'widgets/ImageLoader',
-        'widgets/Roulette'
+        'widgets/Roulette',
+        'savedOutfits'
     ],
 
     function ($, _, SlideMenu, ImageUploader, ImageLoader, Roulette) {
