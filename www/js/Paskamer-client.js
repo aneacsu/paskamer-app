@@ -126,7 +126,7 @@ define([
 
                     var query = "top=" + topFilter + "&center=" + centerFilter + "&bottom=" + bottomFilter;
 
-                    var index = $('#saved-outfit-index').attr('value');
+                    var index = parseInt($('#saved-outfit-index').attr('value'));
 
                     var outfit = getSavedOutfit(query, index + 1);
                     if (!$.isEmptyObject(outfit)) {
