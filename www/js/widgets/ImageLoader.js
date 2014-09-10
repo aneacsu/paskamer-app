@@ -7,10 +7,10 @@ define([
         'use strict';
 
         var ImageLoader = function (slots) {
-            this.slots = slots;
-            _.each(this.slots, _.bind(function (slot) {
-                slot.load(_.bind(this.show, slot));
-            }, this));
+        //     this.slots = slots;
+        //     _.each(this.slots, _.bind(function (slot) {
+        //         slot.load(_.bind(this.show, slot));
+        //     }, this));
         };
 
         _.extend(
