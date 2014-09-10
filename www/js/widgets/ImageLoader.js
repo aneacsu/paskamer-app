@@ -34,33 +34,33 @@ function($, _) {
                     context: this,
                     success: function(data) {
                         if (data['top'] !== undefined) {
-                            this.slots.top
-                                .velocity({
-                                    translateX: "-170px",
-                                    opacity: 0
-                                });
+//                            this.slots.top
+//                                .velocity({
+//                                    translateX: "-170px",
+//                                    opacity: 0
+//                                });
                             
                             this.slots.top.attr('src', data['top']['imageUrl']);
                             $('#top-price').text(data['top']['price']);
                         }
                         
                         if (data['center'] !== undefined) {
-                            this.slots.center
-                                .velocity({
-                                    translateX: "-170px",
-                                    opacity: 0
-                                });
+//                            this.slots.center
+//                                .velocity({
+//                                    translateX: "-170px",
+//                                    opacity: 0
+//                                });
 
                             this.slots.center.attr('src', data['center']['imageUrl']);
                             $('#center-price').text(data['center']['price']);
                         }
 
                         if (data['bottom'] !== undefined) {
-                            this.slots.bottom
-                                .velocity({
-                                    translateX: "-170px",
-                                    opacity: 0
-                                });
+//                            this.slots.bottom
+//                                .velocity({
+//                                    translateX: "-170px",
+//                                    opacity: 0
+//                                });
 
                             this.slots.bottom.attr('src', data['bottom']['imageUrl']);
                             $('#bottom-price').text(data['bottom']['price']);
