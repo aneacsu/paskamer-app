@@ -14,6 +14,8 @@
 
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="portrait" />
-    
+
+    <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+
     <icon src="res/icon.png" />
 </widget>
