@@ -429,13 +429,25 @@ body.pmr-open #wrapper {
 }
 
 #random-outfit-button {
-    width: 156px;
+    width: 100px;
     padding: 5px 6px;
+    margin-left: 30px;
 }
 
 /* line 18, ../scss/_modules/_other.scss */
 #random-outfit-button img {
     width: 30px;
+}
+
+#save-outfit-button {
+    width: 100px;
+    padding: 5px 6px;
+}
+
+/* line 18, ../scss/_modules/_other.scss */
+#save-outfit-button img {
+    width: 30px;
+    height: 30px;
 }
 
 /* line 22, ../scss/_modules/_other.scss */
