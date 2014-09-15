@@ -457,8 +457,8 @@ body.pmr-open #wrapper {
     padding: 5px 6px;
 }
 
-#exploreContent {
-    height: 500px;
+#inventoryContent{
+    height: 520px;
 }
 
 /* line 28, ../scss/_modules/_other.scss */
