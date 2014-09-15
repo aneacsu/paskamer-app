@@ -17,13 +17,6 @@ savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
     'name': 'Love pink'
 });
 savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
-    'imgTop': 'http://i.marktplaats.com/00/s/MTAyNFg1NzY=/z/EJUAAOSwPe1UDfZ1/$_82.JPG',
-    'imgCenter': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/wvcAAOSw7NNUDgR-/$_82.JPG',
-    'imgBottom': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/cd0AAOSwRLZUDgEB/$_82.JPG',
-    'price': 25,
-    'name': 'Flowers'
-});
-savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
     'imgTop': 'http://i.marktplaats.com/00/s/NTAxWDY3MA==/z/InYAAOSwQItUDfMP/$_82.JPG',
     'imgCenter': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/wvcAAOSw7NNUDgR-/$_82.JPG',
     'imgBottom': 'http://i.marktplaats.com/00/s/MjIzWDI5Nw==/z/EAcAAOSw-jhUDZhf/$_82.JPG',
@@ -43,6 +36,13 @@ savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
     'imgBottom': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/cd0AAOSwRLZUDgEB/$_82.JPG',
     'price': 44,
     'name': 'Summer fresh'
+});
+savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
+    'imgTop': 'http://i.marktplaats.com/00/s/MTAyNFg1NzY=/z/EJUAAOSwPe1UDfZ1/$_82.JPG',
+    'imgCenter': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/wvcAAOSw7NNUDgR-/$_82.JPG',
+    'imgBottom': 'http://i.marktplaats.com/00/s/NzY4WDEwMjQ=/z/cd0AAOSwRLZUDgEB/$_82.JPG',
+    'price': 25,
+    'name': 'Flowers'
 });
 savedOutfits["top=t-shirt&center=broeken&bottom=schoenen"].push({
     'imgTop': 'http://i.marktplaats.com/00/s/NTUwWDQxMw==/z/r~MAAOSwDZxTznNO/$_82.JPG',
@@ -196,9 +196,7 @@ function getSavedOutfit(key, index) {
         if (index >= savedOutfits[key].length) {
             $('#saved-outfit-index').attr('value', 0);
         }
-        alert(index);
         if (savedOutfits[key].length > 0) {
-            alert(savedOutfits[key][index].name);
             return savedOutfits[key][index];
         }
     }
