@@ -128,7 +128,6 @@ define([
                     var query = "top=" + topFilter + "&center=" + centerFilter + "&bottom=" + bottomFilter;
 
                     var index = parseInt($('#saved-outfit-index').attr('value'));
-//                    alert(index);
 
                     var outfit = getSavedOutfit(query, index);
                     if (!$.isEmptyObject(outfit)) {
