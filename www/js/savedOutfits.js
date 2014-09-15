@@ -198,6 +198,7 @@ function getSavedOutfit(key, index) {
             $('#saved-outfit-index').attr('value', 0);
             i = 0;
         }
+        alert(i);
         if (savedOutfits[key].length > 0) {
             return savedOutfits[key][i];
         }
