@@ -457,6 +457,10 @@ body.pmr-open #wrapper {
     padding: 5px 6px;
 }
 
+#exploreContent {
+    height: 500px;
+}
+
 /* line 28, ../scss/_modules/_other.scss */
 #create-button img {
     width: 30px;
