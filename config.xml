@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="nl.marktplaats.paskamer" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="nl.marktplaats.paskamer" version="0.0.1" xmlns="http://www.w3.org/ns/widgets"
+        xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Paskamer</name>
     <description>
         Unleash your creativity and taste! Create, save and share outfits based on any item of clothing available on Marktplaats!
@@ -15,7 +16,7 @@
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="portrait" />
 
-    <plugin name="Camera" value="org.apache.cordova.CameraLauncher" />
+    <gap:plugin name="Camera" value="org.apache.cordova.core.CameraLauncher" />
 
     <icon src="res/icon.png" />
 </widget>
