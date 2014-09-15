@@ -196,9 +196,9 @@ function getSavedOutfit(key, index) {
         if (index >= savedOutfits[key].length) {
             index = 0;
         }
-        alert(savedOutfits[key].length);
+        alert(index);
         if (savedOutfits[key].length > 0) {
-            alert(savedOutfits[key][index]);
+            alert(savedOutfits[key][index].name);
             return savedOutfits[key][index];
         }
     }
