@@ -346,8 +346,8 @@ body.pmr-open #wrapper {
 }
 
 #created-outfit-name {
-    /*display: inline;*/
-    /*width: 90px;*/
+    display: inline;
+    width: 50px;
     word-wrap: break-word;
     font-weight: bold;
     font-family: 'Georgia',serif;
