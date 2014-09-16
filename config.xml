@@ -16,7 +16,5 @@
     <preference name="Fullscreen" value="true" />
     <preference name="Orientation" value="portrait" />
 
-    <gap:plugin name="Camera" value="org.apache.cordova.core.CameraLauncher" />
-
     <icon src="res/icon.png" />
 </widget>
