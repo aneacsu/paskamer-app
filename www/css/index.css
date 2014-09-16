@@ -424,6 +424,7 @@ body.pmr-open #wrapper {
 /* line 8, ../scss/_modules/_other.scss */
 .bottom-buttons-container {
     margin-top: 11px;
+    height: 10px;
 }
 
 /* line 12, ../scss/_modules/_other.scss */
