@@ -346,12 +346,12 @@ body.pmr-open #wrapper {
 }
 
 #created-outfit-name {
-    width: 55px;
-    word-wrap: break-word;
+    width: 140px;
+    /*word-wrap: break-word;*/
     font-weight: bold;
     font-family: 'Georgia',serif;
-    /*text-align: center;*/
-    float: left;
+    text-align: center;
+    /*float: ;*/
     /*padding-top: 16px;*/
 }
 
