@@ -136,7 +136,7 @@ define([
                         $('#explore-top-image').attr('src', outfit.imgTop);
                         $('#explore-center-image').attr('src', outfit.imgCenter);
                         $('#explore-bottom-image').attr('src', outfit.imgBottom);
-                        $('#created-outfit-name').text(outfit.name);
+                        $('#created-outfit-name').text(outfit.name + '  ' + outfit.price);
                     }
                 }, this));
             },
